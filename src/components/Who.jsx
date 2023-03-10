@@ -16,12 +16,16 @@ const Container = styled.div`
   width: 1300px;
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 `;
 const Left = styled.div`
   flex: 1;
 
   @media only screen and (max-width: 768px) {
-    display: none;
+    flex: 1;
   }
 `;
 const Right = styled.div`
@@ -32,6 +36,7 @@ const Right = styled.div`
   gap: 35px;
 
   @media only screen and (max-width: 768px) {
+    flex: 1;
     align-items: center;
     text-align: center;
   }

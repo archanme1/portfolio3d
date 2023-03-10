@@ -21,6 +21,7 @@ const Navbar = () => {
     @media only screen and (max-width: 768px) {
       width: 100%;
       padding: 10px;
+      gap: 50px;
     }
   `;
   const Links = styled.div`
@@ -30,6 +31,10 @@ const Navbar = () => {
   `;
   const Logo = styled.img`
     height: 30px;
+
+    @media only screen and (max-width: 768px) {
+      height: 28px;
+    }
   `;
   const List = styled.ul`
     display: flex;
@@ -54,6 +59,10 @@ const Navbar = () => {
   const Icon = styled.img`
     width: 20px;
     cursor: pointer;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
   `;
   const Button = styled.a`
     width: 150px;
@@ -68,6 +77,11 @@ const Navbar = () => {
     text-decoration: none;
     text-align: center;
     font-size: 14px;
+
+    @media only screen and (max-width: 768px) {
+      width: 120px;
+      font-size: 10px;
+    }
   `;
 
   return (

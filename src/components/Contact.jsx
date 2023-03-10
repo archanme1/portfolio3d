@@ -7,6 +7,10 @@ const Contact = () => {
   const Section = styled.div`
     height: 100vh;
     scroll-snap-align: center;
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 100px;
+    }
   `;
 
   const Container = styled.div`
@@ -15,6 +19,9 @@ const Contact = () => {
     display: flex;
     justify-content: space-between;
     gap: 50px;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   `;
   const Left = styled.div`
     flex: 1;
@@ -82,9 +89,9 @@ const Contact = () => {
   const Right = styled.div`
     flex: 1;
 
-    @media only screen and (max-width: 768px) {
+    /* @media only screen and (max-width: 768px) {
       display: none;
-    }
+    } */
   `;
 
   const ref = useRef();

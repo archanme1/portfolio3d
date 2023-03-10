@@ -13,7 +13,7 @@ const Setion = styled.div`
   justify-content: space-between;
 
   @media only screen and (max-width: 768px) {
-    height: 200vh;
+    height: 100vh;
   }
 `;
 const Container = styled.div`
@@ -29,6 +29,7 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    margin-top: 20px;
   }
 `;
 const Left = styled.div`
@@ -49,6 +50,7 @@ const Title = styled.h1`
 
   @media only screen and (max-width: 768px) {
     text-align: center;
+    font-size: 32px;
   }
 `;
 const WhatWeDo = styled.div`
@@ -91,10 +93,9 @@ const Right = styled.div`
   flex: 3;
   position: relative;
 
-  @media only screen and (max-width: 768px) {
-    flex: 1;
-    width: 100%;
-  }
+  /* @media only screen and (max-width: 768px) {
+    display: none;
+  } */
 `;
 const Img = styled.img`
   width: 600px;
