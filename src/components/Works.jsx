@@ -4,7 +4,7 @@ import WebDesign from "./WebDesign";
 import WebDesignTwo from "./WebDesignTwo";
 import GithubDesign from "./GithubDesign";
 import UiuxDesign from "./UiuxDesign";
-import ResponsiveDesign from "./ResponsiveDesign";
+import MobileApp from "./MobileApp";
 import CmsDesign from "./CmsDesign";
 
 const skills = [
@@ -13,7 +13,7 @@ const skills = [
   "GIT/GITHUB",
   "UX/UI DESIGN",
   "HEADLESS CMS",
-  "RESPONSIVE DESIGN",
+  "MOBILE APPLICATIONS",
 ];
 
 const Section = styled.div`
@@ -123,7 +123,7 @@ const Works = () => {
           ) : work === "HEADLESS CMS" ? (
             <CmsDesign />
           ) : (
-            <ResponsiveDesign />
+            <MobileApp />
           )}
         </Right>
       </Container>

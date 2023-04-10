@@ -23,7 +23,7 @@ const Desc = styled.div`
   }
 `;
 
-const ResponsiveDesign = () => {
+const MobileApp = () => {
   return (
     <>
       <Canvas>
@@ -33,11 +33,10 @@ const ResponsiveDesign = () => {
         <OrbitControls enableZoom={false} autoRotate />
       </Canvas>
       <Desc>
-        Designing <b>RESPONSIVE</b> websites to adapt for multiple device
-        resolutions
+        Using <b>REACT-NATIVE</b> to develop cross-platform mobile applications.
       </Desc>
     </>
   );
 };
 
-export default ResponsiveDesign;
+export default MobileApp;
