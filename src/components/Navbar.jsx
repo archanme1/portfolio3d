@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PDF from "../doc/archan.pdf";
+import COVER from "../doc/archanCover.pdf";
 
 const Navbar = () => {
   const Section = styled.div`
@@ -30,7 +31,7 @@ const Navbar = () => {
     gap: 50px;
   `;
   const Logo = styled.img`
-    height: 30px;
+    height: 20px;
 
     @media only screen and (max-width: 768px) {
       height: 28px;
@@ -76,7 +77,7 @@ const Navbar = () => {
     letter-spacing: 1px;
     text-decoration: none;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 
     @media only screen and (max-width: 768px) {
       width: 120px;
@@ -99,7 +100,10 @@ const Navbar = () => {
         <Icons>
           <Icon src="./img/search.png" />
           <Button href={PDF} target="_blank">
-            &lt; My Resume /&gt;
+            &lt; Resume /&gt;
+          </Button>
+          <Button href={COVER} target="_blank">
+            &lt; Cover Letter /&gt;
           </Button>
         </Icons>
       </Container>
